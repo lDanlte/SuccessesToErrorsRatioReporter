@@ -24,15 +24,15 @@ import java.util.Set;
 public class SuccessesToErrorsRatioReporter implements Reporter {
     
     
-    private final ErrorCriteria errorCriteria;
+    private final ErrorCriteria<Integer> errorCriteria;
 
     
-    public SuccessesToErrorsRatioReporter(ErrorCriteria errorCriteria) {
+    public SuccessesToErrorsRatioReporter(ErrorCriteria<Integer> errorCriteria) {
         this.errorCriteria = errorCriteria;
     }
     
     
-    public ErrorCriteria getErrorCriteria() {
+    public ErrorCriteria<Integer> getErrorCriteria() {
         return errorCriteria;
     }
     
